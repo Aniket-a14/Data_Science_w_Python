@@ -1,26 +1,37 @@
 # Break statement
+print("Numbers are: ",end="")
 for i in range(10):
     if i == 5:
         break
-    print(i)
+    print(i,end=" ")
+
+
 
 # Continue statement
+print("\nNumbers are: ",end="")
 for i in range(10):
     if i % 2 == 0:
         continue
-    print(i)
+    print(i,end=" ")
+
+
 
 # Pass statement
+print("\nNumbers are: ",end="")
 for i in range(10):
     if i == 5:
         pass
     else:
-        print(i)
+        print(i,end=" ")
+
+
 
 # Nested loops
 for i in range(3):
     for j in range(3):
         print(i, j)
+
+
 
 
 #match-case statements

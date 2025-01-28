@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-file_path = "india_housing_prices.csv"
+file_path = "class/day_1/india_housing_prices.csv"
 df = pd.read_csv(file_path)
 
 

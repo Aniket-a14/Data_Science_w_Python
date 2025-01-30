@@ -7,7 +7,6 @@ This repository serves as a practice platform for data analysis using Python alo
 The repository includes the following files and directories:
 
 - `class/`: Directory containing Python scripts for data analysis.
-- `india_housing_prices.csv`: Dataset with housing prices in India.
 - `.gitignore`: Specifies files to ignore in the repository.
 
 ## Getting Started

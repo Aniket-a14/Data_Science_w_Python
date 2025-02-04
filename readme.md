@@ -23,8 +23,12 @@ To get started with this project:
    cd Data_Science_w_Python
    ```
 
+3. **Install all dependencies**:
+   ```pip install requirements.txt
+   ```
 
-3. **Run the scripts**:
+
+4. **Run the scripts**:
    Navigate to the `class/` directory and execute the Python scripts to perform data analysis or for practice
 
 

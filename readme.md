@@ -24,7 +24,8 @@ To get started with this project:
    ```
 
 3. **Install all dependencies**:
-   ```pip install requirements.txt
+   ```
+   pip install requirements.txt
    ```
 
 

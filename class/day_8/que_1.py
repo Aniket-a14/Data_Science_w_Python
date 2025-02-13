@@ -35,3 +35,20 @@ print(s,"\n")
 
 s = pd.Series(5, index=[100,101,102,103])
 print(s,"\n")
+
+
+d = {'one': pd.Series([1,2,3], index=['apple','ball','clock']),
+     'two': pd.Series([11,22,33,44], index=['apple','ball','clock','doll'])}
+df = pd.DataFrame(d)
+print(df,"\n")
+print(df[2:4],"\n")
+
+
+df = pd.DataFrame([[1,2,3],[4,5,6]], columns=['a','b','c'])
+df2 = pd.DataFrame([[7,8,9],[10,11,12]], columns=['a','b','c'])
+df = df._append(df2)
+print(df,"\n")
+df = df.drop(0)
+print(df,"\n")
+
+

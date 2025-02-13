@@ -8,8 +8,8 @@ print(df.loc['b'])
 print(df.iloc[2])
 print(df[2:4])
 
-df = pd.DataFrame([[1,2],[3,4]], columns=['a','b'])
-df2 = pd.DataFrame([[5,6],[7,8]], columns=['a','b'])
+df = pd.DataFrame([[1,2, "Aniket"],[3,4, "Ankit"]], columns=['a','b', 'c'])
+df2 = pd.DataFrame([[5,"ok", "Raj"],[7,8, "Sayak"]], columns=['a','b', 'c'])
 df= df._append(df2)
 print(df)
 

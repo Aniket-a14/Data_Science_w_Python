@@ -22,3 +22,18 @@ print(df_dropped_columns)
 
 df_filled = df.fillna({'Age': df['Age'].mean(), 'City': "Unknown", 'Salary': df['Salary'].median()})
 print(df_filled)
+
+df_ffill = df.ffill()
+print(df_ffill)
+
+df_bfill = df.bfill()
+print(df_bfill)
+
+df_numeric = df.select_dtypes(include=[np.number])
+print(df_numeric)
+
+df_interpolate = df_numeric.interpolate()
+df_final = df.copy()
+
+df_final[df_numeric.columns]= df_interpolate
+print(df_final)

@@ -19,3 +19,12 @@ for i,value in enumerate(profit):
     barplot.text(i, value + 100, f'[value:.2f]', ha = 'center')
     
 plt.show()
+
+
+plt.figure(figsize=(8,5))
+sns.scatterplot(x=sales, y=profit, hue=categories, s=100)
+plt.title('Profit vs Sales')
+plt.xlabel('Sales')
+plt.ylabel('Profit')
+plt.show()
+

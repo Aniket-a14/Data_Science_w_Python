@@ -36,3 +36,18 @@ get_height() function is used to get the height of the bar
 get_x() function is used to get the x-coordinate of the bar
 get_width() function is used to get the width of the bar
 '''
+
+# Scatter plot for Sales vs profit
+plt.figure(figsize=(8, 5))
+sns.scatterplot(x='Sales', y='Profit', data=data, hue="Ship Mode", style="Ship Mode", s=100)
+plt.title('Sales vs Profit by Ship Mode')
+plt.xlabel('Sales')
+plt.ylabel('Profit')
+plt.show()
+
+#Heatmap for correlation between numerical columns
+plt.figure(figsize=(6, 4))
+corr = data[['Sales', 'Quantity', 'Discount', 'Profit']].corr()
+sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
+plt.title('Correlation Heatmap')
+plt.show()

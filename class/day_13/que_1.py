@@ -45,7 +45,7 @@ plt.xlabel('Sales')
 plt.ylabel('Profit')
 plt.show()
 
-#Heatmap for correlation between numerical columns
+# Heatmap for correlation between numerical columns
 plt.figure(figsize=(6, 4))
 corr = data[['Sales', 'Quantity', 'Discount', 'Profit']].corr()
 sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)

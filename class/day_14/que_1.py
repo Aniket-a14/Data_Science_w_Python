@@ -10,7 +10,7 @@ plt.show()
 
 #histogram
 plt.figure(figsize=(7, 5))
-sns.histplot(data=iris, x='sepal_length', kde=True)
+plt.hist(data=iris, x='petal_length',bins=50)
 plt.title('Iris Dataset')
 plt.show()
 

@@ -12,7 +12,9 @@ print(df.corr(numeric_only=True))
 print(df.cov(numeric_only=True))
 
 plt.figure(figsize=(6,4))
-plt.hist(data=df,x=["Sales_Cost","Sales_Amt","Sales_Qty","SalesType"],bins=10)
+plt.hist([df["Sales_Cost"], df["Sales_Amt"], df["Sales_Qty"]], bins=10, label=["Sales_Cost", "Sales_Amt", "Sales_Qty"])
+plt.xlabel("Value")
+plt.ylabel("Frequency")
 plt.title("Histogram")
 plt.show()
 
@@ -25,6 +27,6 @@ sns.scatterplot(data=df,x="Sales_Cost",y="Sales_Amt",hue="SalesType",style="Sale
 plt.title("Sales_Cost vs Sales_Amt")
 plt.show()
 
-sns.pairplot(data=df,hue="SalesType",palette="husl",markers=["o","D"])
+sns.pairplot(data=df.select_dtypes(include=["number"]))
 plt.title("PairPlot")
 plt.show()

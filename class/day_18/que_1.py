@@ -5,7 +5,7 @@ sample_mean = 169.5
 population_mean = 168
 population_std_dev = 3.9
 sample_size = 36
-alpha = 0.005
+alpha = 0.05
 tail = 'two'
 
 standard_error = population_std_dev / math.sqrt(sample_size)

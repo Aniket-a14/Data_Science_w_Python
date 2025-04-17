@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.stats import chi2_contingency
 
-#Observed frequency table from your image
+#Observed frequency table 
 # Rows: [CS, Non-CS]
 #Columns: [Python,Java,C++]
 

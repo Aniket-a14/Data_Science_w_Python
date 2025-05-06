@@ -1,7 +1,11 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
+import pandas as pd
 
 iris = sns.load_dataset('iris')
+
+data = pd.DataFrame(iris)
+print(data.describe())
 
 
 plt.figure(figsize=(7, 5))
